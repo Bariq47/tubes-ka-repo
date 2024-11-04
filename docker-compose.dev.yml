@@ -1,0 +1,4 @@
+version: '3.8'
+services:
+  node:
+    command: dev  # Append 'dev' to ENTRYPOINT
