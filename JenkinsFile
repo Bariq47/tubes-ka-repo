@@ -81,13 +81,15 @@
 //     }
 // }
 
+
 pipeline{
 	agent any
 	stages {
-		stage("hello"){
+		stage("keGithub"){
 			steps{
-				echo "my jenkins pipeline"
+				git brach: "main", url:'https://github.com/Bariq47/tubes-ka-repo.git'
 			}
 		}
 	}
 }
+
